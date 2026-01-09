@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jana Hegazy | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url("./photo-1462040700793-fcd2dbc0edf0.jpg") center/cover no-repeat;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .content {
+            position: relative;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content h1 { font-size: 3rem; margin-bottom: 20px; }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            transition: 0.3s;
+            margin: 20px 6px 6px 0;
+            display: inline-block;
+        }
+
+        .btn:hover { background: white; color: black; }
+
+        /* Projects */
+        .project {
+            min-height: 100vh;
+            padding: 100px 12%;
+            background: #35423b;
+            color: white;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .project h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .project p {
+            max-width: 750px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        .tech {
+            margin-bottom: 20px;
+            opacity: 0.85;
+        }
+
+        .tech span {
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin: 4px 6px 4px 0;
+            font-size: 0.85rem;
+        }
+
+        /* Project Images */
+        .project-images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .project-images img {
+            width: 420px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+        }
+
+        footer {
+            background: #1f2924;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Hi, I'm Jana Hegazy</h1>
+            <a href="#project1" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Project 1 -->
+    <section id="project1" class="project">
+        <h2>Motor Control Circuit</h2>
+        <p>
+            This project focuses on designing and simulating a circuit that controls multiple motors.
+            The system allows precise control and demonstrates my understanding of basic electronics,
+            motor drivers, and circuit logic.
+        </p>
+        <div class="tech">
+            <span>Electronics</span>
+            <span>Motor Drivers</span>
+            <span>Circuit Design</span>
+            <span>Simulation</span>
+        </div>
+        <div class="project-images">
+            <img src="./Screenshot 2026-01-09 202801.png" alt="Motor control circuit diagram">
+        </div>
+        <a href="./control-allmotors.fzz" class="btn" download>Download Circuit File</a>
+    </section>
+
+    <!-- Project 2 -->
+    <section id="project2" class="project">
+        <h2>Metal Detector Circuit</h2>
+        <p>
+            A metal detector circuit designed to identify metallic objects using electromagnetic principles.
+            Through this project, I gained experience in signal detection, troubleshooting,
+            and practical circuit implementation.
+        </p>
+        <div class="tech">
+            <span>Analog Circuits</span>
+            <span>Signal Detection</span>
+            <span>Electromagnetics</span>
+            <span>Proteus</span>
+        </div>
+        <div class="project-images">
+            <img src="./Screenshot 2026-01-09 195928.png" alt="Metal detector circuit schematic">
+        </div>
+        <a href="./Metal-detector-circuit.pdsprj" class="btn" download>Download Project File</a>
+    </section>
+
+    <!-- Project 3 -->
+    <section id="project3" class="project">
+        <h2>Robot Prototype</h2>
+        <p>
+            This project is a physical robot prototype that integrates motor control,
+            and embedded systems using a microcontroller. It demonstrates my ability to combine
+            hardware, wiring, and control logic into a functional robotic system.
+        </p>
+        <div class="tech">
+            <span>Arduino</span>
+            <span>Robotics</span>
+            <span>Motor Control</span>
+            <span>Embedded Systems</span>
+        </div>
+
+        <div class="project-images">
+            <img src="./Screenshot 2026-01-09 201240.jpg" alt="Robot prototype front view">
+            <img src="./8b9cba90-e9b0-4f86-9712-184aa6878767.jpg" alt="Robot prototype internal wiring">
+        </div>
+
+        <p style="margin-top:20px; opacity:0.85;">
+            The prototype was built and tested to validate movement, control accuracy,
+            and real-world hardware integration.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Jana Hegazy | Portfolio
+    </footer>
+
+</body>
+</html>
